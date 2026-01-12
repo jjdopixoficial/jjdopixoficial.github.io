@@ -14,7 +14,6 @@ body{
   text-align:center;
 }
 
-/* TOPO */
 .top{
   background:#020617;
   padding:14px;
@@ -23,7 +22,6 @@ body{
   border-bottom:2px solid #0b5ed7;
 }
 
-/* TIMER */
 .timer{
   font-size:26px;
   font-weight:bold;
@@ -31,7 +29,6 @@ body{
   color:#fde047;
 }
 
-/* VAGAS */
 .progress{
   width:85%;
   height:10px;
@@ -46,12 +43,12 @@ body{
   background:linear-gradient(90deg,#38bdf8,#0b5ed7);
   transition:width 0.5s;
 }
+
 .small{
   font-size:14px;
   opacity:0.9;
 }
 
-/* TEXTO */
 h1{
   font-size:34px;
   margin:25px 15px 10px;
@@ -59,12 +56,12 @@ h1{
   text-transform:uppercase;
 }
 .highlight{ color:#38bdf8; }
+
 .sub{
   font-size:20px;
   margin:10px 20px 25px;
 }
 
-/* BOTÃO */
 .button{
   background:linear-gradient(90deg,#38bdf8,#0b5ed7);
   color:#fff;
@@ -88,6 +85,7 @@ h1{
   font-size:15px;
   color:#fde047;
 }
+
 .footer{
   margin:35px 20px 20px;
   font-size:13px;
@@ -109,7 +107,6 @@ h1{
 .options{
   display:flex;
   gap:15px;
-  justify-content:center;
 }
 .options button{
   flex:1;
@@ -119,12 +116,12 @@ h1{
   border:none;
   border-radius:12px;
 }
-.options .yes{
-  background:linear-gradient(90deg,#22c55e,#16a34a);
+.yes{
+  background:linear-gradient(90deg,#38bdf8,#0b5ed7);
   color:#fff;
 }
-.options .no{
-  background:#334155;
+.no{
+  background:linear-gradient(90deg,#22c55e,#16a34a);
   color:#fff;
 }
 
@@ -177,8 +174,8 @@ Entre agora no grupo fechado com acesso limitado.
 <div class="question-box" id="question">
   <h2>Você tem Telegram?</h2>
   <div class="options">
-    <button class="yes" onclick="redirectWhats()">✅ SIM</button>
-    <button class="no" onclick="closeQuestion()">❌ NÃO</button>
+    <button class="yes" onclick="goTelegram()">✅ SIM</button>
+    <button class="no" onclick="goWhats()">❌ NÃO</button>
   </div>
 </div>
 
@@ -239,12 +236,12 @@ function popup(){
 }
 setInterval(popup,9000);
 
-// PERGUNTA
-function redirectWhats(){
-  window.location.href="https://chat.whatsapp.com/BVwz8dL0sqVLAADeTZNnGN";
+// REDIRECIONAMENTOS
+function goTelegram(){
+  window.location.href="https://t.me/+TbXmkjxm21JhOWIx";
 }
-function closeQuestion(){
-  document.getElementById("question").style.display="none";
+function goWhats(){
+  window.location.href="https://chat.whatsapp.com/BVwz8dL0sqVLAADeTZNnGN";
 }
 </script>
 
